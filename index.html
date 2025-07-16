@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terço Devocional - Meditando os Mistérios do Rosário</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1>Terço Devocional</h1>
+            <p class="subtitle">Meditando os Mistérios do Rosário</p>
+            <div class="theme-toggle">
+                <button id="theme-switcher" aria-label="Alternar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </header>
+
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#terco">Terço</a></li>
+                <li><a href="#leituras">Leituras do Dia</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="terco" class="section">
+                <h2>Mistérios do Rosário <span id="current-misterio-info"></span></h2>
+                <div class="tabs">
+                    <button class="tab-button" data-misterio="gozosos">Gozosos<br><small>(segunda/domingo)</small></button>
+                    <button class="tab-button" data-misterio="dolorosos">Dolorosos<br><small>(terça/sexta)</small></button>
+                    <button class="tab-button" data-misterio="gloriosos">Gloriosos<br><small>(quarta/domingo)</small></button>
+                    <button class="tab-button" data-misterio="luminosos">Luminosos<br><small>(quinta)</small></button>
+                </div>
+
+                <div class="tab-content" id="gozosos">
+                    <!-- Conteúdo será preenchido por JavaScript -->
+                </div>
+                <div class="tab-content" id="dolorosos">
+                    <!-- Conteúdo será preenchido por JavaScript -->
+                </div>
+                <div class="tab-content" id="gloriosos">
+                    <!-- Conteúdo será preenchido por JavaScript -->
+                </div>
+                <div class="tab-content" id="luminosos">
+                    <!-- Conteúdo será preenchido por JavaScript -->
+                </div>
+
+                <div class="progress-container">
+                    <h3>Progresso do Terço</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 0%"></div>
+                    </div>
+                    <div class="progress-count">
+                        <span id="current-count">0</span>/<span id="total-count">50</span> Ave Marias
+                    </div>
+                    <button id="reset-progress" class="btn">Reiniciar</button>
+                </div>
+            </section>
+
+            <section id="leituras" class="section">
+                <h2>Leituras do Dia</h2>
+                <div class="date-display">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span id="current-date"></span>
+                </div>
+                <div class="leituras-container">
+                    <div class="loading">Carregando leituras...</div>
+                    <!-- Leituras serão inseridas aqui pelo JavaScript -->
+                </div>
+            </section>
+
+            <section id="sobre" class="section">
+                <h2>Sobre o Terço Devocional</h2>
+                <div class="about-card">
+                    <p>Esta aplicação foi desenvolvida para auxiliar na prática devocional do Santo Rosário, selecionando automaticamente os mistérios conforme o dia da semana.</p>
+                    
+                    <h3>Como rezar o terço:</h3>
+                    <ol>
+                        <li>Faça o Sinal da Cruz</li>
+                        <li>Reze o Credo</li>
+                        <li>Reze um Pai Nosso</li>
+                        <li>Reze três Ave Marias</li>
+                        <li>Reze um Glória ao Pai</li>
+                        <li>Anuncie o primeiro mistério e reze um Pai Nosso</li>
+                        <li>Reze dez Ave Marias enquanto medita o mistério</li>
+                        <li>Reze um Glória ao Pai e a oração de Fátima</li>
+                        <li>Repita para os demais mistérios</li>
+                        <li>Ao final, reze a Salve Rainha</li>
+                    </ol>
+                    
+                    <div class="schedule">
+                        <h3>Mistérios por dia:</h3>
+                        <ul>
+                            <li><strong>Segunda-feira e Sábado:</strong> Mistérios Gozosos</li>
+                            <li><strong>Terça-feira e Sexta-feira:</strong> Mistérios Dolorosos</li>
+                            <li><strong>Quarta-feira e Domingo:</strong> Mistérios Gloriosos</li>
+                            <li><strong>Quinta-feira:</strong> Mistérios Luminosos</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>© 2025 Terço Devocional</p>
+                <p>Leituras providas por <a href="https://liturgiadiaria.cnbb.org.br/" target="_blank">CNBB</a></p>
+                <div class="social-links">
+                    <a href="#" aria-label="Compartilhar no Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Compartilhar no Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Compartilhar no WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
